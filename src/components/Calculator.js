@@ -1,4 +1,5 @@
 import { useState } from "react";
+import Table from '../components/Table'
 
 function Calculator() {
   const [equis, setEquis] = useState(0);
@@ -62,6 +63,9 @@ function Calculator() {
       <div>
         <p> Resultados </p>
        {calculating}
+      </div>
+      <div>
+        <Table />
       </div>
     </div>
   );
